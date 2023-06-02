@@ -1,1 +1,11 @@
 include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  plugins:
+    - custom_lint
+  errors:
+    invalid_annotation_target: ignore
+  
+  exclude:
+    - lib/**.g.dart
+    - lib/**.frezeed.dart
