@@ -18,8 +18,15 @@ class HomeScreen extends StatelessWidget {
                 margin: EdgeInsets.only(top: size.height * 0.25),
                 color: Colors.white,
               ),
-              const HeaderSection(),
-              const SearchCard(),
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                child: Column(
+                  children: [
+                    HeaderSection(),
+                    SearchCard(),
+                  ],
+                ),
+              ),
             ],
           ),
         ));
